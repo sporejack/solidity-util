@@ -16,7 +16,7 @@ library Integers {
      * its self is a valid unsigned integer
      * 
      * @param _value The ASCII string to be converted to an unsigned integer
-     * @return uint The unsigned value of the ASCII string
+     * @return _ret The unsigned value of the ASCII string
      */
     function parseInt(string memory _value)
         public
@@ -62,7 +62,7 @@ library Integers {
      * Convert an 8 bit unsigned integer to a byte
      *
      * @param _base The 8 bit unsigned integer
-     * @return byte The byte equivalent
+     * @return _ret The byte equivalent
      */
     function toByte(uint8 _base)
         public
@@ -81,7 +81,7 @@ library Integers {
      * Converts an unsigned integer to bytes
      *
      * @param _base The integer to be converted to bytes
-     * @return bytes The bytes equivalent 
+     * @return _ret The bytes equivalent 
      */
     function toBytes(uint _base)
         internal

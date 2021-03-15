@@ -15,7 +15,7 @@ library Addresses {
      * Check to see if the subject address is a contract on the Ethereum network
      * 
      * @param _base The address on the network to check if it is a contract
-     * @return bool Returns true if it is a valid contract
+     * @return _r Returns true if it is a valid contract
      */
     function isContract(address _base) internal view returns (bool _r) {
         assembly {
