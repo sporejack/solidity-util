@@ -46,7 +46,7 @@ library Integers {
         bytes memory _tmp = new bytes(32);
         uint i;
         for(i = 0;_base > 0;i++) {
-            _tmp[i] = byte(uint8((_base % 10) + 48));
+            _tmp[i] = bytes1(uint8((_base % 10) + 48));
             _base /= 10;
         }
         bytes memory _real = new bytes(i--);
@@ -67,7 +67,7 @@ library Integers {
     function toByte(uint8 _base)
         public
         pure
-        returns (byte _ret) {
+        returns (bytes1 _ret) {
         assembly {
             let m_alloc := add(msize(),0x1)
             mstore8(m_alloc, _base)
